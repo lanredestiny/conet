@@ -441,7 +441,24 @@ footer .footer-content-wrapper img {
         display: block;
         padding: 50px 0;
     }
+
+    .content-wrapper-center {
+        display: grid;
+        display: -moz-grid;
+        display: -ms-grid;
+        grid-template-areas:
+            "text text"
+            "image image"
+    }
+
+    .content-wrapper-center .content-right {
+        grid-area: image;
+    }
     
+    .content-wrapper-center .content-text {
+        grid-area: text;
+    }
+
     .content-wrapper img {
         width: 100%;
         margin-top: 30px;
